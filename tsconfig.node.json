@@ -1,0 +1,31 @@
+// Yeh config sirf "tooling" files ke liye hai — jaise vite.config.ts —
+// jo browser mein nahi chalti, balki build-time pe Node.js environment mein
+// chalti hain. Isliye iski `lib` browser DOM APIs include nahi karti,
+// sirf modern JS features (ES2023) — kyunki Node ke andar `document`,
+// `window` jaisi cheezein exist hi nahi karti.
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2022",
+    // Sirf JS ki built-in features — DOM wala lib yahan jaan-boojh kar nahi hai.
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  // Sirf vite.config.ts is config ke daayre mein aati hai.
+  "include": ["vite.config.ts"]
+}

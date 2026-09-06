@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1788601060579" clover="3.2.0">
+  <project timestamp="1788601060580" name="All files">
+    <metrics statements="266" coveredstatements="241" conditionals="97" coveredconditionals="70" methods="86" coveredmethods="75" elements="449" coveredelements="386" complexity="0" loc="266" ncloc="266" packages="7" files="18" classes="18"/>
+    <package name="src">
+      <metrics statements="13" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="App.tsx" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/App.tsx">
+        <metrics statements="13" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.shared">
+      <metrics statements="31" coveredstatements="31" conditionals="7" coveredconditionals="6" methods="12" coveredmethods="12"/>
+      <file name="asyncState.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/shared/asyncState.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="20" count="91" type="stmt"/>
+        <line num="21" count="21" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+      </file>
+      <file name="mockApi.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/shared/mockApi.ts">
+        <metrics statements="27" coveredstatements="27" conditionals="7" coveredconditionals="6" methods="8" coveredmethods="8"/>
+        <line num="10" count="10" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="37" count="10" type="cond" truecount="0" falsecount="1"/>
+        <line num="38" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="62" count="10" type="stmt"/>
+        <line num="63" count="13" type="stmt"/>
+        <line num="67" count="10" type="stmt"/>
+        <line num="68" count="12" type="stmt"/>
+        <line num="72" count="10" type="stmt"/>
+        <line num="73" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="74" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="75" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.task1-fetch-list">
+      <metrics statements="37" coveredstatements="36" conditionals="16" coveredconditionals="10" methods="10" coveredmethods="9"/>
+      <file name="TransactionList.tsx" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task1-fetch-list/TransactionList.tsx">
+        <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="13" type="stmt"/>
+        <line num="17" count="13" type="cond" truecount="3" falsecount="0"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="36" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="60" count="3" type="cond" truecount="1" falsecount="1"/>
+        <line num="61" count="3" type="stmt"/>
+      </file>
+      <file name="api.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task1-fetch-list/api.ts">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="21" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="useTransactions.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task1-fetch-list/useTransactions.ts">
+        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="27" type="stmt"/>
+        <line num="18" count="27" type="stmt"/>
+        <line num="20" count="27" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="24" count="10" type="stmt"/>
+        <line num="25" count="10" type="stmt"/>
+        <line num="27" count="10" type="stmt"/>
+        <line num="29" count="10" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="34" count="3" type="cond" truecount="1" falsecount="2"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="39" count="27" type="stmt"/>
+        <line num="40" count="8" type="stmt"/>
+        <line num="42" count="8" type="stmt"/>
+        <line num="45" count="27" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.task2-form-validation">
+      <metrics statements="70" coveredstatements="65" conditionals="38" coveredconditionals="31" methods="22" coveredmethods="20"/>
+      <file name="SendMoneyForm.tsx" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task2-form-validation/SendMoneyForm.tsx">
+        <metrics statements="14" coveredstatements="13" conditionals="15" coveredconditionals="14" methods="6" coveredmethods="5"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="63" type="stmt"/>
+        <line num="13" count="186" type="stmt"/>
+        <line num="14" count="54" type="stmt"/>
+        <line num="17" count="63" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="22" count="63" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="33" count="62" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="70" count="248" type="stmt"/>
+      </file>
+      <file name="api.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task2-form-validation/api.ts">
+        <metrics statements="6" coveredstatements="3" conditionals="3" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="useSendMoneyForm.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task2-form-validation/useSendMoneyForm.ts">
+        <metrics statements="24" coveredstatements="24" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="8"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="63" type="stmt"/>
+        <line num="37" count="63" type="stmt"/>
+        <line num="38" count="54" type="stmt"/>
+        <line num="39" count="54" type="stmt"/>
+        <line num="40" count="54" type="stmt"/>
+        <line num="41" count="54" type="stmt"/>
+        <line num="52" count="63" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="55" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="61" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="72" count="63" type="stmt"/>
+      </file>
+      <file name="validation.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task2-form-validation/validation.ts">
+        <metrics statements="26" coveredstatements="25" conditionals="18" coveredconditionals="16" methods="7" coveredmethods="7"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="19" type="stmt"/>
+        <line num="16" count="19" type="cond" truecount="4" falsecount="0"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="58" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="78" type="cond" truecount="4" falsecount="1"/>
+        <line num="31" count="55" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="52" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="36" count="12" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="10" type="stmt"/>
+        <line num="41" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="45" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="54" count="5" type="stmt"/>
+        <line num="55" count="5" type="stmt"/>
+        <line num="56" count="20" type="stmt"/>
+        <line num="57" count="20" type="cond" truecount="1" falsecount="0"/>
+        <line num="59" count="5" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="64" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.task3-global-state">
+      <metrics statements="29" coveredstatements="29" conditionals="9" coveredconditionals="9" methods="9" coveredmethods="9"/>
+      <file name="WatchlistApp.tsx" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task3-global-state/WatchlistApp.tsx">
+        <metrics statements="29" coveredstatements="29" conditionals="9" coveredconditionals="9" methods="9" coveredmethods="9"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="29" count="7" type="stmt"/>
+        <line num="37" count="37" type="stmt"/>
+        <line num="38" count="37" type="stmt"/>
+        <line num="39" count="37" type="stmt"/>
+        <line num="41" count="37" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="2" type="stmt"/>
+        <line num="44" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="37" type="stmt"/>
+        <line num="54" count="14" type="stmt"/>
+        <line num="57" count="18" type="stmt"/>
+        <line num="65" count="7" type="stmt"/>
+        <line num="66" count="7" type="stmt"/>
+        <line num="68" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="72" count="6" type="stmt"/>
+        <line num="76" count="12" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.task3-global-state.store">
+      <metrics statements="36" coveredstatements="32" conditionals="3" coveredconditionals="3" methods="15" coveredmethods="12"/>
+      <file name="hooks.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task3-global-state/store/hooks.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="11" count="44" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
+      <file name="selectors.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task3-global-state/store/selectors.ts">
+        <metrics statements="14" coveredstatements="13" conditionals="1" coveredconditionals="1" methods="10" coveredmethods="7"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="15" type="stmt"/>
+        <line num="9" count="26" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="16" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="31" count="8" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+      </file>
+      <file name="store.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task3-global-state/store/store.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="watchlistSlice.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task3-global-state/store/watchlistSlice.ts">
+        <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="24" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="25" count="7" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="31" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="6" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="39" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="40" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.task4-complex-ux">
+      <metrics statements="50" coveredstatements="48" conditionals="16" coveredconditionals="11" methods="15" coveredmethods="13"/>
+      <file name="CardSearch.tsx" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task4-complex-ux/CardSearch.tsx">
+        <metrics statements="26" coveredstatements="26" conditionals="10" coveredconditionals="8" methods="8" coveredmethods="8"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="48" type="stmt"/>
+        <line num="14" count="48" type="stmt"/>
+        <line num="15" count="48" type="stmt"/>
+        <line num="17" count="48" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="21" count="5" type="cond" truecount="0" falsecount="1"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="26" count="48" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="30" count="48" type="stmt"/>
+        <line num="34" count="32" type="stmt"/>
+        <line num="55" count="48" type="cond" truecount="1" falsecount="0"/>
+        <line num="56" count="38" type="stmt"/>
+        <line num="59" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="60" count="6" type="stmt"/>
+        <line num="67" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="76" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="83" count="2" type="stmt"/>
+      </file>
+      <file name="api.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task4-complex-ux/api.ts">
+        <metrics statements="5" coveredstatements="3" conditionals="3" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+      <file name="useAsyncData.ts" path="/Users/shoaibshebi/Movies/ClaudeCodeMe/revolut-interview-prep/src/task4-complex-ux/useAsyncData.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="3" coveredconditionals="3" methods="5" coveredmethods="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="63" type="stmt"/>
+        <line num="13" count="63" type="stmt"/>
+        <line num="17" count="63" type="stmt"/>
+        <line num="21" count="11" type="stmt"/>
+        <line num="22" count="11" type="stmt"/>
+        <line num="23" count="11" type="stmt"/>
+        <line num="25" count="11" type="stmt"/>
+        <line num="27" count="11" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="30" count="3" type="cond" truecount="3" falsecount="0"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="35" count="63" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="63" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

@@ -1,0 +1,14 @@
+// Yeh "solution" / root tsconfig hai — khud iska koi compiler option nahi hai.
+// Iska kaam sirf itna hai ki TypeScript ko bata de "is project ke andar do
+// alag-alag configs hain, dono ko project references ke through jodo":
+//   1. tsconfig.app.json -> src/ ka browser (React) code
+//   2. tsconfig.node.json -> vite.config.ts jaisi Node-side config files
+// Isi wajah se editors (VS Code) aur `tsc -b` ko pata chalta hai ki kaunsa
+// config kis file pe apply hoga, bina dono ko ek hi file mein mix kiye.
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}

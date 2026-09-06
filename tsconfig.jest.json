@@ -1,0 +1,28 @@
+// Yeh config sirf Jest test-run ke waqt use hoti hai (jest.config.cjs mein
+// isi file ka reference diya gaya hai — dekho "transform" option).
+//
+// tsconfig.app.json ko hi extend karta hai (strict mode, jsx: react-jsx,
+// sab wahi rules yahan bhi apply hote hain) — lekin do cheezein badalni
+// zaroori thi kyunki Jest, Vite jaisa modern ESM-bundler nahi hai:
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    // Jest (bina extra ESM setup ke) CommonJS require/module.exports expect
+    // karta hai — isliye yahan "ESNext" ko overwrite karke "CommonJS" kiya.
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    // App config mein noEmit:true tha (Vite khud JS banata hai). Yahan
+    // ts-jest ko khud .ts/.tsx files ko actual JS mein compile karna padta
+    // hai taaki Jest (Node) unhe chala sake — isliye noEmit ko false kiya.
+    "noEmit": false,
+    // "isolatedModules" app config mein isliye true tha kyunki esbuild/swc
+    // file-by-file transpile karte hain. ts-jest ko poora type info chahiye
+    // hota hai (jaise cross-file type checks), isliye yahan false.
+    "isolatedModules": false,
+    // Test files mein `describe`, `it`, `expect`, jest-dom ke matchers
+    // (`toBeInTheDocument` waghera) bina import kiye globally available
+    // hone ke liye — TypeScript ko in packages ke global type declarations
+    // batana zaroori hai.
+    "types": ["jest", "@testing-library/jest-dom", "node"]
+  }
+}

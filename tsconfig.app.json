@@ -1,0 +1,59 @@
+// Yeh config sirf src/ folder (asli React app code — components, hooks,
+// types) ke liye hai. Vite dev server aur `vite build` isi config ko dekh
+// kar type-check karte hain. Test files (jest) apna alag config use karte
+// hain — tsconfig.jest.json — kyunki Jest ko CommonJS chahiye hota hai.
+{
+  "compilerOptions": {
+    // TypeScript apna incremental build cache yahan save karta hai — isse
+    // dobara type-check karte waqt sirf changed files hi re-check hoti hain.
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+
+    // Compiled JS kis JS version jaisa dikhega — modern browsers target
+    // karne ke liye ES2020 kaafi hai (top-level await, optional chaining etc.)
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+
+    // Konsi built-in APIs available maani jayengi: ES2020 JS features +
+    // DOM APIs (document, window, etc.) + DOM.Iterable (for...of on NodeList).
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // Import/export syntax ka style — ESNext matlab native ES modules,
+    // jinhe Vite khud bundle/transform karta hai.
+    "module": "ESNext",
+
+    // node_modules ke andar ki .d.ts files ko deeply type-check mat karo —
+    // build fast rehta hai aur third-party libs ke chhote type-errors block nahi karte.
+    "skipLibCheck": true,
+
+    /* Bundler mode — yeh options Vite jaise bundler ke saath kaam karne ke liye hain */
+    // Node ke purane resolution rules ke bajaye, jaisa Vite/webpack imports
+    // resolve karte hain waisa hi TypeScript bhi samjhe.
+    "moduleResolution": "Bundler",
+    // Import statement mein ".ts"/".tsx" extension likhna allow karo (Vite ise handle kar leta hai).
+    "allowImportingTsExtensions": true,
+    // Har file ko independently transpile kiya ja sake — bundler tools (esbuild/swc)
+    // isi tarah kaam karte hain, ek file dusri file dekhe bina.
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    // TypeScript sirf type-checking karega, JS output NAHI banayega —
+    // actual JS output Vite (esbuild) generate karta hai, isliye "noEmit: true".
+    "noEmit": true,
+    // JSX (<div>...</div>) ko React 17+ ke naye JSX transform se handle karo —
+    // matlab har file mein `import React from 'react'` likhne ki zaroorat nahi.
+    "jsx": "react-jsx",
+
+    /* Linting-jaisi strictness — yeh options bugs ko compile-time pe hi pakadte hain */
+    // Sabse important flag: strict null checks, no implicit any, etc. sab ON.
+    // Isi wajah se `unknown` explicitly likhna padta hai catch blocks mein (any nahi).
+    "strict": true,
+    // Koi bhi variable declare karke use na kiya ho to error (dead code turant dikh jata hai).
+    "noUnusedLocals": true,
+    // Koi function parameter declare ho par use na ho to error.
+    "noUnusedParameters": true,
+    // switch-case mein galti se "break" bhool jaana (fallthrough) — TS isse catch karega.
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  // Yeh config sirf "src" folder ke andar ki files pe apply hoga.
+  "include": ["src"]
+}
