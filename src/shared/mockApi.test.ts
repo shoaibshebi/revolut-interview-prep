@@ -1,4 +1,4 @@
-import { simulateRequest, ApiError, isApiError, isError, getErrorMessage } from './mockApi';
+import { simulateRequest, simulateRequestSimple, ApiError, isApiError, isError, getErrorMessage } from './mockApi';
 
 describe('simulateRequest', () => {
   it('resolves with the given data after the delay', async () => {
@@ -26,6 +26,17 @@ describe('simulateRequest', () => {
     controller.abort();
 
     await expect(promise).rejects.toMatchObject({ name: 'AbortError' });
+  });
+});
+
+describe('simulateRequestSimple', () => {
+  it('resolves with the given data after the default delay', async () => {
+    const result = await simulateRequestSimple({ id: 1 }, 10);
+    expect(result).toEqual({ id: 1 });
+  });
+
+  it('has no way to fail or be cancelled — always resolves (that is the point of the simple version)', async () => {
+    await expect(simulateRequestSimple('always works', 5)).resolves.toBe('always works');
   });
 });
 

@@ -5,14 +5,16 @@ import { TransactionList } from './task1-fetch-list/TransactionList';
 import { SendMoneyForm } from './task2-form-validation/SendMoneyForm';
 import { WatchlistApp } from './task3-global-state/WatchlistApp';
 import { CardSearch } from './task4-complex-ux/CardSearch';
+import TransactionListPrac from './task1-fetch-list-practice/TransactionList';
 
 // A union of string literals restricts `activeTask` to exactly these 4 values —
 // assigning anything else is a compile error, so the tab list below and this
 // type can never quietly drift apart.
-type TaskId = 'task1' | 'task2' | 'task3' | 'task4';
+type TaskId = 'task1' | 'task1-prac' | 'task2' | 'task3' | 'task4';
 
 const TASKS: Array<{ id: TaskId; label: string }> = [
   { id: 'task1', label: 'Task 1: Fetch + List' },
+  { id: 'task1-prac', label: 'Task 1 Prac: Fetch + List' },
   { id: 'task2', label: 'Task 2: Form Validation' },
   { id: 'task3', label: 'Task 3: Global State' },
   { id: 'task4', label: 'Task 4: Complex UX' },
@@ -37,6 +39,7 @@ function App() {
       </nav>
 
       {activeTask === 'task1' && <TransactionList failureRate={0.3} />}
+      {activeTask === 'task1-prac' && <TransactionListPrac failureRate={0.3} />}
       {activeTask === 'task2' && <SendMoneyForm />}
       {activeTask === 'task3' && (
         <Provider store={store}>

@@ -34,7 +34,10 @@ interface SimulateOptions {
  * Generic `<T>` means this one function works for a list of transactions, a single
  * form-submit response, or anything else — the caller decides what T is by how they use it.
  */
-export function simulateRequest<T>(data: T, options: SimulateOptions = {}): Promise<T> {
+export function simulateRequest<T>(
+  data: T,
+  options: SimulateOptions = {},
+): Promise<T> {
   const { delayMs = 400, failureRate = 0, signal } = options;
 
   return new Promise<T>((resolve, reject) => {
@@ -55,6 +58,25 @@ export function simulateRequest<T>(data: T, options: SimulateOptions = {}): Prom
       clearTimeout(timer);
       reject(new DOMException('Aborted', 'AbortError'));
     });
+  });
+}
+
+/**
+ * Simpler version of `simulateRequest` — no `AbortSignal`, no injectable
+ * failure rate. Just "wait `delayMs`, then resolve with `data`."
+ *
+ * This is what a fake-API helper looks like BEFORE you add cancellation and
+ * error-injection support. Useful to see side-by-side with the full version
+ * above: the extra options in `simulateRequest` aren't complexity for its own
+ * sake — each one exists to support a specific requirement (abort = cleanup
+ * on unmount/race conditions, failureRate = being able to demo/test the error
+ * UI on demand). Prefer this simple version for quick throwaway examples;
+ * use the full `simulateRequest` for anything that needs a real loading/retry
+ * flow, which is every task in this project.
+ */
+export function simulateRequestSimple<T>(data: T, delayMs = 400): Promise<T> {
+  return new Promise<T>((resolve) => {
+    setTimeout(() => resolve(data), delayMs);
   });
 }
 

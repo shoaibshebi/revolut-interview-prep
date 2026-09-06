@@ -54,6 +54,8 @@ describe('useTransactions', () => {
     expect(result.current.state.error).toBe('Network down');
   });
 
+
+  
   it('retry() re-fetches and can recover from a previous error', async () => {
     mockedFetchTransactions.mockRejectedValueOnce(new Error('Network down'));
     const transactions = [buildTransaction()];
